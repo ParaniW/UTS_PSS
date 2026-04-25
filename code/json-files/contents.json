@@ -1,0 +1,19 @@
+[
+{
+"course_id": "1",
+"video_url": "http://example.com/video1.mp4", "name":
+"Introduction to Mathematics",
+"description": "This video introduces basic mathematical concepts."
+},
+{
+"course_id": "2",
+"video_url": "http://example.com/video2.mp4", "name":
+"Fundamentals of Physics",
+"description": "Explore the fundamental principles of physics in this introductory video."
+},
+{
+"course_id": "3",
+"video_url": "http://example.com/video3.mp4", "name": "Chemistry Basics",
+"description": "A beginner's guide to chemistry, covering essential concepts."
+}
+]

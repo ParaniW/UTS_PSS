@@ -1,0 +1,23 @@
+services:
+  django:
+    container_name: projek_uts
+    build: .
+    command: sleep infinity
+    # command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./code:/code
+    ports:
+      - "8001:8000"
+  postgres:
+    container_name: uts_db
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: uts_lms
+      POSTGRES_USER: uts_user
+      POSTGRES_PASSWORD: uts_password
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5532:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data/pgdata
+      
